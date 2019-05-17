@@ -1,0 +1,26 @@
+.block-supplies{
+
+  .text-title{
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+  a:hover{
+     text-decoration: none;
+     color: #444;
+   }
+
+  .priority-high{
+    font-size: 30px;
+    color: #f6993f;
+  }
+
+  .supplies-status-success{
+    border-radius: 10px;
+    background: #98FB98;
+  }
+
+}
