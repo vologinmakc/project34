@@ -1,26 +1,60 @@
-.block-supplies{
+.block-supplies {
 
-  .text-title{
-    font-family: "Segoe UI", sans-serif;
-  }
+    .block-group-title{
+        font-family: "Segoe UI", sans-serif;
+        font-size: 14px;
+        color:#1b1e21;
+    }
 
-  a{
-    text-decoration: none;
-    color: #333;
-  }
-  a:hover{
-     text-decoration: none;
-     color: #444;
-   }
+    .text-title {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 18px;
+        text-decoration: underline;
+    }
 
-  .priority-high{
-    font-size: 30px;
-    color: #f6993f;
-  }
+    a {
+        text-decoration: none;
+        color: #333;
+    }
 
-  .supplies-status-success{
-    border-radius: 10px;
-    background: #98FB98;
-  }
+    a:hover {
+        text-decoration: none;
+        color: #444;
+    }
 
+    .priority-high {
+        font-size: 30px;
+        color: #f6993f;
+    }
+
+    .supplies-status-success {
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+        background: #98FB98;
+    }
+
+    .block-img-priority{
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .block-status{
+        padding: 5px;
+        background: #ececec;
+        border-radius: 5px;
+    }
+    .block-img-status{
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+    }
+    .block-task-date{
+        font-style: italic;
+        color: #A0522D;
+    }
+    .block-task-status{
+        color: #1d68a7;
+    }
 }

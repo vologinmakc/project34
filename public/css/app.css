@@ -10662,8 +10662,16 @@ a.text-dark:focus {
   }
 }
 
+.block-supplies .block-group-title {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #1b1e21;
+}
+
 .block-supplies .text-title {
   font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
 }
 
 .block-supplies a {
@@ -10682,7 +10690,35 @@ a.text-dark:focus {
 }
 
 .block-supplies .supplies-status-success {
-  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
   background: #98FB98;
+}
+
+.block-supplies .block-img-priority {
+  height: 50px;
+  width: 50px;
+}
+
+.block-supplies .block-status {
+  padding: 5px;
+  background: #ececec;
+  border-radius: 5px;
+}
+
+.block-supplies .block-img-status {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+.block-supplies .block-task-date {
+  font-style: italic;
+  color: #A0522D;
+}
+
+.block-supplies .block-task-status {
+  color: #1d68a7;
 }
 
