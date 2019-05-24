@@ -15,18 +15,32 @@ class IndexController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $user = Auth::user();
         $group = $user->group;
-        $tasks = $user->tasks()->orderBy('priority', 'asc')->get();
+        $sort = 'created_at';
+
+        if ($request->isMethod('post') and $request->sort != '')
+        {
+            $sort = $request->sort;
+        }
+        if ($sort == 'created_at')
+        {
+            $tasks = $user->tasks()->orderBy("$sort", 'desc')->get();
+        } else
+        {
+            $tasks = $user->tasks()->orderBy("$sort", 'asc')->get();
+        }
 
 
         # вывод шаблона по группе
-        if ($group->name == 'Снабжение') {
+        if ($group->name == 'Снабжение')
+        {
             return view('cabinet.supplies.supplies', [
                 'tasks' => $tasks,
-                'group' => $group
+                'group' => $group,
+                'sort' => $sort
             ]);
         }
 

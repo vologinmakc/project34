@@ -5,6 +5,8 @@
  */
 
 require('./bootstrap');
+require('./cabinet/supplies/create-input');
+require('./cabinet/supplies/supplies-delete-image');
 
 window.Vue = require('vue');
 

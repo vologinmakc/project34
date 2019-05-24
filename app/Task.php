@@ -28,4 +28,19 @@ class Task extends Model
     {
         return $this->hasMany('App\Comment');
     }
+
+    public function sub_tasks()
+    {
+        return $this->hasMany('App\SubTask');
+    }
+
+    public function task_images()
+    {
+        return $this->hasMany('App\TaskImage');
+    }
+
+    public function task_files()
+    {
+        return $this->hasMany('App\TaskFile');
+    }
 }

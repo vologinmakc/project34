@@ -49268,6 +49268,10 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./cabinet/supplies/create-input */ "./resources/js/cabinet/supplies/create-input.js");
+
+__webpack_require__(/*! ./cabinet/supplies/supplies-delete-image */ "./resources/js/cabinet/supplies/supplies-delete-image.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -49347,6 +49351,76 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/cabinet/supplies/create-input.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/cabinet/supplies/create-input.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(function () {
+  $('#add-input').each(function () {
+    var component = $(this),
+        cnt = 1;
+    $('#btn-element').on('click', function () {
+      var input = "<div class=\"form-group\">\n                            <label for=\"taskTitleInput\"><small class=\"text-info\"><i>\u041D\u043E\u0432\u0430\u044F \u043F\u043E\u0437\u0438\u0446\u0438\u044F</i></small></label>\n                            <input type=\"text\" class=\"form-control\" name=\"sub_task".concat(cnt, "\"\n                                      placeholder=\"\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435\" required>\n                         </div>");
+      component.append(input);
+      cnt++;
+    });
+  });
+}); // скрипт для отправки состояния чекбокса подзадач(subtasks)
+
+$(function () {
+  $('.js-checkbox').each(function () {
+    var component = $(this);
+    component.on('click', function (event) {
+      var checkbox_id = this.getAttribute('data');
+      var checkbox_status = this.checked;
+      var hidden_input = $('#' + checkbox_id);
+      hidden_input.attr('name', checkbox_id);
+      hidden_input.val(checkbox_status);
+    });
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/cabinet/supplies/supplies-delete-image.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/cabinet/supplies/supplies-delete-image.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(function () {
+  $('.js-delete-image').each(function () {
+    var component = $(this);
+    component.on('click', function (event) {
+      var image_id = this.getAttribute('data');
+      var delete_img = confirm('Удалить изображение?');
+
+      if (delete_img) {
+        $.ajax({
+          url: '/cabinet/task/image/delete',
+          type: 'POST',
+          data: {
+            id: image_id
+          },
+          headers: {
+            'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+          },
+          success: function success(data) {
+            $('#' + image_id).remove();
+          },
+          error: function error(msg) {}
+        });
+      }
+    });
+  });
+});
 
 /***/ }),
 
