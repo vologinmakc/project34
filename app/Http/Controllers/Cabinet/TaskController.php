@@ -85,7 +85,7 @@ class TaskController extends Controller
             }
 
             # сохраним файлы изображений
-            if ($files['task_images'])
+            if (isset($files['task_images']))
             {
                 $i = 0;
                 foreach ($files['task_images'] as $file)

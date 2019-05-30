@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic);@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -34,7 +34,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Roboto", sans-serif;
+  --font-family-sans-serif: "PT Sans", sans-serif, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -66,7 +66,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -6148,7 +6148,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -6273,7 +6273,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -10676,8 +10676,14 @@ a.text-dark:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.block-supplies .block-task-attribute {
+.block-supplies .block-task-title {
+  min-height: 50px;
+  margin: 10px;
   padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.block-supplies .block-task-attribute {
   color: #333;
 }
 
@@ -10697,5 +10703,12 @@ a.text-dark:focus {
   width: 50px;
   height: 50px;
   margin-top: 5px;
+}
+
+.block-supplies .checkbox-size {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0.9;
+  cursor: pointer;
 }
 

@@ -14,8 +14,9 @@
                 </select>
             </form>
 
+            {{--Блок задач--}}
             @foreach($tasks as $task)
-                <div class="row block-task
+                <div class="row bg-light block-task
                     @if($task->status == 'WORK')
                         block-task-status-work
                     @elseif($task->status == 'SUCCESS')
@@ -25,34 +26,21 @@
                     @endif">
                     <div class="col-10">
                         <a href="{{ URL::route('cabinet.task.detail',['task'=>$task]) }}">
-                            <h4>
-                                {{$task->title}}
+                            <h5>
+                                <span style="text-decoration: underline">{{$task->title}}</span>
                                 @if($task->priority == 'HIGH')
                                     <i style="color:indianred">!</i>
                                 @endif
-                            </h4>
+                            </h5>
                         </a>
                         <div class="block-task-attribute">
-                            <span>Date:</span>
-                            <span style="color: #761b18;">
+                            {{--<span style="color: #761b18;">
                             {{ \Carbon\Carbon::parse($task->created_at)->format('d.m.Y')}}
-                            </span>
-                            <br>
-                            <span>Status:</span>
-                            <i style="color: #1b4b72;text-decoration: underline;cursor: pointer">
-                            @if($task->status == 'WORK')
-                                В работе</h6>
-                            @elseif($task->status == 'CLOSE')
-                                Закрыта</h5>
-                            @elseif($task->status == 'SUCCESS')
-                                Выполнена</h5>
-                            @elseif($task->status == 'PAYMENT')
-                                На оплате</h5>
-                            @elseif($task->status == 'CREATED')
-                                Не назначена
-                            @endif</i>
+                            </span>--}}
                         </div>
                     </div>
+
+                    {{--Блок комментариев--}}
                     <div class="col-2">
                         @if($task->comments->count() > 0)
                             <div class="block-task-img">

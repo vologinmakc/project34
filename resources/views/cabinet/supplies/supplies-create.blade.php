@@ -9,14 +9,14 @@
                     <div class="form-group">
                         <label for="taskTitleInput"><h5>Укажите название</h5></label>
                         <input type="text" class="form-control" id="taskTitleInput"
-                               placeholder="Название" name="title" required>
+                               placeholder="Название" name="title" value="Задача от - {{ date('d.m.Y')}}" required>
                         <small class="form-text text-muted">
                             Это поле будет отображаться в списке задач
                         </small>
                     </div>
 
                     <div class="form-group">
-                        <label for="taskTitleInput"><h5>Опишите суть задачи</h5></label>
+                        <label for="taskTitleInput"><h5>Если необходимо опишите суть задачи</h5></label>
                         <textarea name="task_body" class="form-control" id="taskTitleInput"
                                   placeholder="Описание"></textarea>
                         <small class="form-text text-muted">
@@ -62,7 +62,7 @@
                     <div id="add-input">
 
                     </div>
-                    <a class="btn btn-dark btn-sm" id="btn-element" href="#">Добавить позицию</a>
+                    <div class="btn btn-dark btn-sm" id="btn-element">Добавить позицию</div>
 
                     <hr>
                     <button type="submit" class="btn btn-primary">Создать</button>

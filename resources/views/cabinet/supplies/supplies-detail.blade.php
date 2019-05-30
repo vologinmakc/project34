@@ -42,14 +42,18 @@
                         <div class="card-header bg-dark mb-2">
                             <h4 class="text-white">{{$task->title}}</h4>
                         </div>
-
-                        <div class="card-body">
-                            <h5 class="card-text text-title mb-4">{{$task->task_body}}</h5>
+                        <div class="block-task-title">
+                            <div class="">
+                                <h5 class="card-text text-title mb-4">{{$task->task_body}}</h5>
+                            </div>
+                        </div>
+                        {{--Комментарии--}}
+                        {{--<div class="card-body">
                             @if($task->comments->count() > 0)
                                 <div class="card">
                                     @foreach($task->comments as $comment)
                                         <div class="card-body text-title">
-                                            {{--@dd($comment)--}}
+                                            @dd($comment)
                                             <p><b>{{$comment->users()->first()->name}}:</b>
                                                 {{ \Carbon\Carbon::parse($comment->created_at)->format('d.m.Y')}}
                                             </p>
@@ -59,23 +63,30 @@
                                     @endforeach
                                 </div>
                             @endif
-                        </div>
-
+                        </div>--}}
                         <div class="row pl-2">
                             <div class="col-12">@if($task->sub_tasks()->count() > 0)
                                     <form action="{{ URL::route('cabinet.task.subtask.store')}}" method="post">
                                         @csrf
+                                        @php($i = 1)
                                         @foreach($task->sub_tasks as $sub_task)
-                                            <div class="custom-control custom-switch ">
-                                                <input type="checkbox" class="custom-control-input js-checkbox" id="customSwitch{{ $sub_task->id }}"
+
+                                            <div class="">
+                                                <input type="checkbox" class="checkbox-size js-checkbox" id="customSwitch{{ $sub_task->id }}"
                                                     data="id-{{ $sub_task->id }}"
                                                     @if($sub_task->complete)
                                                         checked
                                                     @endif>
+                                                <label class="form-check-label" for="exampleCheck1">{{ $i }}.<span class="alert-link"> {{$sub_task->title }}</span></label>
                                                 <input type="hidden" id="id-{{ $sub_task->id }}" value="">
-                                                <label class="custom-control-label" for="customSwitch{{ $sub_task->id }}">{{ $sub_task->title }}</label>
+                                                {{--<label class="custom-control-label" for="customSwitch{{ $sub_task->id }}">{{ $sub_task->title }}</label>
+                                                --}}
                                             </div>
-                                            <div class="bg-light col-10 col-sm-8 pb-2">
+
+                                            {{--Блок примечания к позиции--}}
+                                            <a class="alert-link" data-toggle="collapse" href="#notice-block{{ $sub_task->id }}"
+                                               role="button" aria-expanded="false"><small>Паказать примечание</small></a>
+                                            <div class="bg-light border col-10 col-sm-8 pb-2 collapse" id="notice-block{{ $sub_task->id }}">
                                                 <div class="">
                                                     <label for="notice"><small>Примечание:</small></label>
                                                     <input type="text" class="form-control" id="notice" name="notice-{{ $sub_task->id }}"
@@ -83,6 +94,8 @@
                                                 </div>
                                             </div>
                                             <hr>
+                                            {{--Блок примечания к позиции end--}}
+                                            @php($i++)
                                         @endforeach
                                         <button type="button" class="btn btn-outline-dark btn-sm mt-2" data-toggle="modal"
                                                 data-target="#addSubTask" data-whatever="@mdo">Добавить позицию</button>
@@ -103,8 +116,8 @@
                                        role="button" aria-expanded="false">Паказать</a>
                                 </div>
 
-                                <div class="card ml-2">
-                                    <div class="card-body collapse" id="task-detail-img">
+                                <div class="card ml-2 collapse" id="task-detail-img">
+                                    <div class="card-body">
 
                                             @foreach($images as $image)
                                                 <div id="{{ $image->id }}">

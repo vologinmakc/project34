@@ -15,6 +15,7 @@ class SubTaskController extends Controller
         if (Auth::user())
         {
             $data = $request->all();
+
             foreach ($data as $key => $value)
             {
                 if (strpos($key, 'id') === 0)
