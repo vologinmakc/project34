@@ -86,7 +86,8 @@
                                             {{--Блок примечания к позиции--}}
                                             <a class="alert-link" data-toggle="collapse" href="#notice-block{{ $sub_task->id }}"
                                                role="button" aria-expanded="false"><small>Паказать примечание</small></a>
-                                            <div class="bg-light border col-10 col-sm-8 pb-2 collapse" id="notice-block{{ $sub_task->id }}">
+
+                                            <div class="bg-light border col-10 col-sm-8 pb-2 collapse @if($sub_task->notice)show @endif" id="notice-block{{ $sub_task->id }}">
                                                 <div class="">
                                                     <label for="notice"><small>Примечание:</small></label>
                                                     <input type="text" class="form-control" id="notice" name="notice-{{ $sub_task->id }}"

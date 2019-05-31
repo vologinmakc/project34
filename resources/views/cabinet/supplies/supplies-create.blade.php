@@ -9,7 +9,7 @@
                     <div class="form-group">
                         <label for="taskTitleInput"><h5>Укажите название</h5></label>
                         <input type="text" class="form-control" id="taskTitleInput"
-                               placeholder="Название" name="title" value="Задача от - {{ date('d.m.Y')}}" required>
+                               placeholder="Название" name="title" value="Задача от: {{ date('d.m.Y')}}" required>
                         <small class="form-text text-muted">
                             Это поле будет отображаться в списке задач
                         </small>

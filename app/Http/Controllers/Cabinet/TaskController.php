@@ -105,4 +105,26 @@ class TaskController extends Controller
         }
         return redirect()->route('cabinet.index');
     }
+
+    public function update(Request $request)
+    {
+        if (Auth::user())
+        {
+            $this->validate($request, [
+                'task_id' => 'required|numeric',
+                'status' => 'required|string'
+            ]);
+
+            $data = $request->all();
+
+            $task = Task::find($data['task_id'])->first();
+            if ($task)
+            {
+                $task->fill($data);
+                $task->save();
+
+                return redirect()->back();
+            }
+        }
+    }
 }

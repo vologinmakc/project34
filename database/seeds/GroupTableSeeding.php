@@ -15,7 +15,7 @@ class GroupTableSeeding extends Seeder
 
         if (!$group->exists) {
             $group->fill([
-                'name' => 'Снабжения',
+                'name' => 'Снабжение',
             ]);
         }
 

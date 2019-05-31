@@ -3,15 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="879c5a55-dc24-41cf-95ac-01f6c4ad05e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cabinet/SubTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cabinet/SubTaskController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_17_054124_create_comment_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_17_054124_create_comment_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_17_061602_create_group_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_17_000000_create_group_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_18_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_17_000001_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/GroupTableSeeding.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/GroupTableSeeding.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/cabinet/supplies.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/cabinet/supplies.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cabinet/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cabinet/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/cabinet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cabinet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/cabinet.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cabinet.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,32 +38,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="551">
+              <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
               <folding>
                 <element signature="e#48#87#0#PHP" expanded="true" />
+                <element signature="e#424#914#0#PHP" />
                 <element signature="e#920#1150#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/cabinet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/SubTaskController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#48#64#0#PHP" expanded="true" />
+                <element signature="e#1156#2817#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -64,17 +53,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="37" column="90" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="90" />
+            <state relative-caret-position="392">
+              <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
+            <state relative-caret-position="523">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -82,23 +71,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+            <state relative-caret-position="187">
+              <caret line="100" column="103" selection-start-line="100" selection-start-column="103" selection-end-line="101" selection-end-column="73" />
               <folding>
-                <marker date="1559228678168" expanded="false" signature="111:1902" ph="..." />
-                <marker date="1559228678168" expanded="false" signature="2576:3509" ph="..." />
-                <marker date="1559228678168" expanded="true" signature="2603:3474" ph="..." />
-                <marker date="1559228678168" expanded="true" signature="6793:9641" ph="..." />
+                <element signature="e#2576#3509#0#Blade" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/cabinet/supplies.scss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="36" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -106,17 +92,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cabinet/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="112">
+              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/cabinet.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/sass/cabinet/supplies.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+            <state relative-caret-position="275">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -133,6 +128,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>block-task-title</find>
+      <find>exampleModalLabel</find>
+      <find>addSubTask</find>
+      <find>block-task-status-work</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,7 +156,6 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_17_044535_create_task_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_17_053149_create_comment_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_17_054124_create_comment_user_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_17_061602_create_group_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/TaskTableSeeding.php" />
@@ -166,14 +163,11 @@
         <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/app/Group.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/database/seeds/GroupTableSeeding.php" />
-        <option value="$PROJECT_DIR$/resources/views/cabinet/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/cabinet/supplies.blade.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/lang/ru/supplies.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_23_035823_create_task_files_table.php" />
         <option value="$PROJECT_DIR$/app/TaskFile.php" />
         <option value="$PROJECT_DIR$/app/TaskImage.php" />
@@ -181,23 +175,27 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_05_22_064506_create_sub_task_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/StoreTaksRequest.php" />
         <option value="$PROJECT_DIR$/resources/js/cabinet/create-input.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/js/cabinet/supplies-delete-image.js" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js" />
         <option value="$PROJECT_DIR$/resources/js/cabinet/supplies/supplies-delete-image.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/ImageController.php" />
-        <option value="$PROJECT_DIR$/routes/cabinet.php" />
         <option value="$PROJECT_DIR$/app/SubTask.php" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/SubTaskController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_17_054124_create_comment_user_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/IndexController.php" />
+        <option value="$PROJECT_DIR$/database/seeds/GroupTableSeeding.php" />
+        <option value="$PROJECT_DIR$/resources/views/cabinet/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/cabinet.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/SubTaskController.php" />
-        <option value="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php" />
+        <option value="$PROJECT_DIR$/routes/cabinet.php" />
+        <option value="$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php" />
+        <option value="$PROJECT_DIR$/resources/views/cabinet/supplies/supplies.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/cabinet/supplies.scss" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php" />
       </list>
     </option>
   </component>
@@ -290,9 +288,9 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -300,78 +298,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="case.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case.loc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="cabinet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="cabinet" type="462c0819:PsiDirectoryNode" />
-              <item name="supplies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="cabinet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="cabinet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project34.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project34.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="cabinet" type="462c0819:PsiDirectoryNode" />
-              <item name="supplies" type="462c0819:PsiDirectoryNode" />
+              <item name="case.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,6 +381,7 @@
       <workItem from="1559214748223" duration="4642000" />
       <workItem from="1559228802111" duration="42000" />
       <workItem from="1559229153015" duration="751000" />
+      <workItem from="1559265537506" duration="9749000" />
     </task>
     <task id="LOCAL-00001" summary="Start-project Autorize User">
       <created>1558067844637</created>
@@ -478,13 +422,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100408000" />
+    <option name="totallyTimeSpent" value="110157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.15417868" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.25167784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5014663" side_tool="true" weight="0.1742671" />
@@ -499,7 +442,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.7199414" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.314578" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35285506" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -594,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/GroupTableSeeding.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -643,27 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_17_054124_create_comment_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_17_061602_create_group_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_18_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="24" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -675,13 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="21" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -730,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -781,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -795,86 +689,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_17_000001_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="322">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_17_000000_create_group_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#48#87#0#PHP" expanded="true" />
-            <element signature="e#920#1150#0#PHP" />
-          </folding>
+        <state relative-caret-position="56">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_17_054124_create_comment_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/GroupTableSeeding.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cabinet/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/cabinet.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/cabinet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        <state relative-caret-position="168">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="100" column="103" selection-start-line="100" selection-start-column="103" selection-end-line="101" selection-end-column="73" />
+          <folding>
+            <element signature="e#2576#3509#0#Blade" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cabinet/supplies/create-input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/SubTaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="378">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="49" selection-end-column="15" />
           <folding>
             <element signature="e#48#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cabinet/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cabinet/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/cabinet.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        <state relative-caret-position="551">
+          <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+          <folding>
+            <element signature="e#48#87#0#PHP" expanded="true" />
+            <element signature="e#424#914#0#PHP" />
+            <element signature="e#920#1150#0#PHP" />
+            <element signature="e#1156#2817#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="37" column="90" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cabinet/supplies/supplies-detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
-          <folding>
-            <marker date="1559228678168" expanded="false" signature="111:1902" ph="..." />
-            <marker date="1559228678168" expanded="false" signature="2576:3509" ph="..." />
-            <marker date="1559228678168" expanded="true" signature="2603:3474" ph="..." />
-            <marker date="1559228678168" expanded="true" signature="6793:9641" ph="..." />
-          </folding>
+        <state relative-caret-position="392">
+          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/cabinet/supplies.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="275">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_035525_create_task_images_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>

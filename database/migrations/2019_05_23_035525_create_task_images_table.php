@@ -15,7 +15,7 @@ class CreateTaskImagesTable extends Migration
     {
         Schema::create('task_images', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title')->nullable();
+            $table->string('url')->nullable();
             $table->string('alt')->nullable();
             $table->bigInteger('task_id')->unsigned();
 

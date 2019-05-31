@@ -2,11 +2,11 @@
 
     a{
         text-decoration: none;
-        color: #1b1e21;
+        color: #333333;
     }
 
     .block-task{
-        min-height: 50px;
+        min-height: 40px;
         margin: 10px;
         padding: 5px;
         background: #fefefe;
@@ -25,16 +25,24 @@
         color: #333;
     }
 
+    .block-task-status-title{
+        border-radius: 5px;
+        background: #284257;
+        color: #fff;
+        padding: 0 5px;
+    }
+
     .block-task-status-success{
-        border-left: 10px solid #5cd08d;
+        border-left: 15px solid #5cd08d;
     }
 
     .block-task-status-payment{
-        border-left: 10px solid slategrey;
+        border-left: 15px solid slategrey;
     }
 
     .block-task-status-work{
-        border-left: 10px solid sandybrown;
+        border: 1px solid #999;
+        border-left: 15px solid sandybrown;
     }
 
     .block-task-img{

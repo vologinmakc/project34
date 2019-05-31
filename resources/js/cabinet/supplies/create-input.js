@@ -33,3 +33,20 @@ $(function () {
         });
     });
 });
+
+// скрипт для изменения статуса задачи
+$(function () {
+    $('.js-status-modal').each(function () {
+        let component = $(this);
+
+    });
+
+    $('#updateStatus').on('show.bs.modal', function (e) {
+        let el_task_status = (e.relatedTarget),
+        task_id = el_task_status.getAttribute('data');
+
+        // добавим в скрытое поле id задачи
+        let input_hidden_modal = $(this).find('#task_id');
+        input_hidden_modal.val(task_id);
+    })
+});

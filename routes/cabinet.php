@@ -10,6 +10,7 @@ Route::group([
 
     Route::get('/task/create', 'TaskController@create')->name('cabinet.task.create');
     Route::post('/task/store', 'TaskController@store')->name('cabinet.task.store');
+    Route::post('/task/update', 'TaskController@update')->name('cabinet.task.update');
     Route::get('/task/{task}', 'TaskController@detail')->name('cabinet.task.detail');
 
     Route::post('/task/', 'SubTaskController@update')->name('cabinet.task.subtask.store');
