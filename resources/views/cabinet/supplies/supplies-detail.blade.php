@@ -78,7 +78,15 @@
                                                     @if($sub_task->complete)
                                                         checked
                                                     @endif>
-                                                <label class="form-check-label" for="exampleCheck1">{{ $i }}.<span class="alert-link"> {{$sub_task->title }}</span></label>
+                                                <label class="form-check-label" for="exampleCheck1"
+                                                    @if($sub_task->complete)
+                                                       style="background: #b3e8ca;
+                                                              padding: 5px;
+                                                              border-radius: 5px;
+                                                              color: #454d55"
+                                                    @endif>{{ $i }}.
+                                                    <span class="alert-link"> {{$sub_task->title }}</span>
+                                                </label>
                                                 <input type="hidden" id="id-{{ $sub_task->id }}" value="">
                                                 {{--<label class="custom-control-label" for="customSwitch{{ $sub_task->id }}">{{ $sub_task->title }}</label>
                                                 --}}

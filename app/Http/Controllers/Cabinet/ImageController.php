@@ -29,6 +29,7 @@ class ImageController extends Controller
                         if (Storage::disk('public')->exists($file_url))
                         {
                             Storage::disk('public')->delete($file_url);
+
                             $task_image->delete();
                         }
 
