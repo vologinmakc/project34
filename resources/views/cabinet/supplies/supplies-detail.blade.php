@@ -118,14 +118,16 @@
                                        role="button" aria-expanded="false">Паказать</a>
                                 </div>
 
+                                {{--блок изображений--}}
                                 <div class="card ml-2 collapse" id="task-detail-img">
                                     <div class="card-body">
 
                                             @foreach($images as $image)
                                                 <div id="{{ $image->id }}">
                                                     <div>
-                                                        <img class="img-fluid"
-                                                             src="{{ asset('storage/'.$image->url) }}">
+                                                        <a href="{{ asset('storage/'.$image->url) }}"><img
+                                                                class="img-fluid"
+                                                                src="{{ asset('storage/'.$image->url) }}"></a>
                                                     </div>
                                                     <div>
                                                         <div data="{{ $image->id }}"
