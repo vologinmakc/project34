@@ -46,7 +46,7 @@ class SubTaskController extends Controller
         {
             $this->validate($request, [
                 'title' => 'required|string',
-                'notice' => 'string'
+                'notice' => 'string|nullable'
             ]);
 
             $fields = $request->all();

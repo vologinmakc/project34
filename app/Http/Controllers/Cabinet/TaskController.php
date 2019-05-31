@@ -21,19 +21,16 @@ class TaskController extends Controller
 
     public function detail(Task $task, Request $request)
     {
-        if ($request->isMethod('post'))
-        {
-            dd($request->all());
-        }
-
         if ($task)
         {
             $task = $task->with('sub_tasks', 'comments', 'comments.users')->find($task->id);
             $images = $task->task_images()->get();
+            $user_create_task = User::where('id', $task->create_user_id)->first();
 
             return view('cabinet.supplies.supplies-detail', [
                 'task' => $task,
-                'images' => $images
+                'images' => $images,
+                'create_user' => $user_create_task
             ]);
         }
 
@@ -65,6 +62,7 @@ class TaskController extends Controller
                 $task = new Task();
                 $task->fill($data);
                 $task->create_user_id = Auth::user()->id;
+
 
                 $task->save();
                 # Проверим на наличии доп позиций и сохраним их

@@ -41,6 +41,7 @@
                     <div class="card">
                         <div class="card-header bg-dark mb-2">
                             <h4 class="text-white">{{$task->title}}</h4>
+                            <small class="text-white">Добавил: {{ $create_user->name }}</small>
                         </div>
                         <div class="block-task-title">
                             <div class="">
@@ -98,8 +99,8 @@
                                             {{--Блок примечания к позиции end--}}
                                             @php($i++)
                                         @endforeach
-                                        <button type="button" class="btn btn-outline-dark btn-sm mt-2" data-toggle="modal"
-                                                data-target="#addSubTask" data-whatever="@mdo">Добавить позицию</button>
+                                        <button type="button" class="btn btn-outline-info btn-sm mt-2" data-toggle="modal"
+                                                data-target="#addSubTask" >Добавить позицию</button>
                                         <hr>
                                         <input type="submit" class="btn btn-sm btn-primary mt-2" value="Сохранить">
 

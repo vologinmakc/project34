@@ -69,7 +69,7 @@
                             <h5>
                                 <span><i>{{$task->title}}</i></span>
                                 @if($task->priority == 'HIGH')
-                                    <i style="color:indianred">!</i>
+                                    <i style="color:indianred">(Важно)</i>
                                 @endif
                             </h5>
                         </a>
